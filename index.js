@@ -6,7 +6,7 @@ function iniciar () {
   if(((localStorage.getItem('name')) && (localStorage.getItem('name'))){
 }else{
 document.getElementById('title').innerHTML = "Título";
-document.getElementById('texto').innerHTML = "Anotação..........";
+document.getElementById('texto').innerHTML = "Anotação…";
 }
 
 
@@ -25,7 +25,7 @@ document.getElementById('texto').innerHTML = "Anotação..........";
   if ((inicio_titulo == "") && (inicio_nota != "")) {
     document.getElementById('title').innerHTML = "Título";
   } else if ((inicio_nota == "") && (inicio_titulo != "")){
-    document.getElementById('texto').innerHTML = "Anotação..........";
+    document.getElementById('texto').innerHTML = "Anotação…";
   }
 }
 
@@ -67,12 +67,12 @@ function mudar() {
   if ((novo_titulo == "") && (novo_texto == "")) {
     document.getElementById('title').innerHTML = "Título";
 
-    document.getElementById('texto').innerHTML = "Anotação..........";
+    document.getElementById('texto').innerHTML = "Anotação…";
     document.getElementById('date'). value = "dd/mm/yyyy";
   }
   if ((novo_titulo == "") && (novo_texto != "")) {
     document.getElementById('title').innerHTML = "Título";
   } else if ((novo_texto == "") && (novo_titulo != "")){
-    document.getElementById('texto').innerHTML = "Anotação..........";
+    document.getElementById('texto').innerHTML = "Anotação…";
   }
 }
