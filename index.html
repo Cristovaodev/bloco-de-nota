@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+  <title>Bloco De Notas</title>
+</head>
+
+
+<body onload="iniciar();">
+  <div id="corpo">
+    <header>
+      <h1 id="titulo">Bloco De Nota</h1>
+    </header>
+    <input type="radio" name="check" id="check" checked /><label for="check" onclick="mudar();">✔️
+    </label>
+    <form id="form" accept-charset="utf-8">
+      <input type="text" name="novo_titulo" id="novo_titulo" maxlength="20" placeholder="Digite um título" />
+      <input type="text" name="novo_texto" id="novo_texto" maxlength="350" placeholder="Digite a Anotação" />
+    </form>
+
+
+    <input type="radio" name="check" id="check1" /><label for="check1" onclick="editar();">🖋️️</label>
+
+    <section id="box">
+      <section class="cabecalho">
+        <div id="title">
+          Titulo
+        </div>
+        &nbsp;&nbsp;&nbsp;
+        <div id="number">
+
+        </div>
+      </section>
+      <article id="content">
+        <div id="texto">
+          Anotação..........
+        </div>
+        <input type="button" name="date" id="date" value="dd/mm/yyyy" />
+      </article>
+    </section>
+    <footer>
+
+
+      <a href="#abrirModal">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </a>
+
+      <div id="abrirModal" class="modal">
+        <a href="#fechar" title="Fechar" class="fechar">
+          <div class="barx"></div>
+          <div class="barx"></div>
+        </a>
+        <h2>Sobre</h2>
+        <p>
+          Esta é uma simples bloco de nota, desenvolvido por mim, Cristóvão Joaquim José, como forma de aprendizagem pela prática.<br>
+          Ele é facil de usar, podendo editar o título e conteudo da sua nota clicando no ícone da esferográfica(🖋️) e salvando atraves do clique no icone de certo(✔️).<br>
+          Espero que gostes!<br>
+          atenciosamente, Cristóvão Joaquim José.
+        </p>
+        <a href="mailto: cristovaojoaquimmativere@gmail.com">
+          <button class="gmail">Gmail</button>
+        </a>
+        <a href="https://www.linkedin.com/in/crist%C3%B3v%C3%A3o-joaquim-808073230">
+          <button class="linked">LinkedIn</button>
+        </a><br>
+        <a href="https://wa.me/message/YR426DD4PENXN1">
+          <button class="whats">WhatsApp</button>
+        </a>
+        <a href="https://github.com/Cristovaodev">
+          <button class="github">Github</button>
+        </a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
