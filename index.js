@@ -5,44 +5,47 @@ function iniciar () {
 
 
   if ((inicio_titulo == "") && (inicio_nota == "")) {
-    document.getElementById('title').innerHTML = "Título";
+    document.getElementById('title').innerText = "Título";
 
-    document.getElementById('texto').innerHTML = "Anotação..........";
+    document.getElementById('texto').innerText = "Anotação…";
     document.getElementById('date'). value = "dd/mm/yyyy";
   } else {
 
-    document.getElementById('title').innerHTML = inicio_titulo;
+    document.getElementById('title').innerText = inicio_titulo;
 
-    document.getElementById('texto').innerHTML = inicio_nota;
+    document.getElementById('texto').innerText = inicio_nota;
 
     document.getElementById('date'). value = inicio_data;
   }
 
 
   if ((inicio_titulo == "") && (inicio_nota != "")) {
-    document.getElementById('title').innerHTML = "Título";
-  } else if ((inicio_nota == "") && (inicio_titulo != "")){
-    document.getElementById('texto').innerHTML = "Anotação..........";
+    document.getElementById('title').innerText = "Título";
+  } else if ((inicio_nota == "") && (inicio_titulo != "")) {
+    document.getElementById('texto').innerText = "Anotação…";
   }
 }
 
 function editar() {
-  document.getElementById('titulo').innerHTML = "Edição";
+  document.getElementById('titulo').innerText = "Edição";
 
 }
 
+function voltar(){
+  window.location.href="index.html";
+}
 
 function mudar() {
-  document.getElementById('titulo').innerHTML = "Bloco De Nota";
+  document.getElementById('titulo').innerText = "Bloco De Nota";
 
   novo_titulo = document.getElementById('novo_titulo').value;
 
   novo_texto = document.getElementById('novo_texto').value;
 
 
-  document.getElementById('title'). innerHTML = novo_titulo;
+  document.getElementById('title'). innerText = novo_titulo;
 
-  document.getElementById('texto').innerHTML = novo_texto;
+  document.getElementById('texto').innerText = novo_texto;
 
   localStorage.setItem('title', novo_titulo);
   localStorage.setItem('nota', novo_texto);
@@ -62,14 +65,14 @@ function mudar() {
   }
 
   if ((novo_titulo == "") && (novo_texto == "")) {
-    document.getElementById('title').innerHTML = "Título";
+    document.getElementById('title').innerText = "Título";
 
-    document.getElementById('texto').innerHTML = "Anotação..........";
+    document.getElementById('texto').innerText = "Anotação…";
     document.getElementById('date'). value = "dd/mm/yyyy";
   }
   if ((novo_titulo == "") && (novo_texto != "")) {
-    document.getElementById('title').innerHTML = "Título";
-  } else if ((novo_texto == "") && (novo_titulo != "")){
-    document.getElementById('texto').innerHTML = "Anotação..........";
+    document.getElementById('title').innerText = "Título";
+  } else if ((novo_texto == "") && (novo_titulo != "")) {
+    document.getElementById('texto').innerText = "Anotação…";
   }
 }

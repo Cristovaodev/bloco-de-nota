@@ -15,11 +15,14 @@
     <header>
       <h1 id="titulo">Bloco De Nota</h1>
     </header>
+    
     <input type="radio" name="check" id="check" checked /><label for="check" onclick="mudar();">✔️
     </label>
-    <form id="form" accept-charset="utf-8">
+
+    <form id="form" accept-charset="utf-8" onsubmit="mudar();">
+      <button class="voltar" type="button" onclick="voltar();">✖️</button>
       <input type="text" name="novo_titulo" id="novo_titulo" maxlength="20" placeholder="Digite um título" />
-      <input type="text" name="novo_texto" id="novo_texto" maxlength="350" placeholder="Digite a Anotação" />
+      <input type="text" name="novo_texto" id="novo_texto" maxlength="450" placeholder="Digite a Anotação" />
     </form>
 
 
@@ -28,15 +31,15 @@
     <section id="box">
       <section class="cabecalho">
         <div id="title">
-          Titulo
+          Título
         </div>
-        &nbsp;&nbsp;&nbsp;
+
         <div id="number">
         </div>
       </section>
       <article id="content">
         <div id="texto">
-          Anotação..........
+          Anotação…
         </div>
         <input type="button" name="date" id="date" value="dd/mm/yyyy" />
       </article>
